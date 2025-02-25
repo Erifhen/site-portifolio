@@ -1,0 +1,374 @@
+:root {
+    --roxo: #563D80;
+    --amarelo: #FFC041;
+    --preto: #000000;
+    --branco: #FFFFFF;
+}
+
+body {
+    font-family: 'Bahnschrift SemiBold', sans-serif;
+    margin: 0;
+    background-color: var(--branco);
+    color: var(--preto);
+}
+.main-content {
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rockwell Condensed', serif;
+}
+
+h1 {
+    font-size: 78px;
+}
+
+p {
+    font-size: 24px;
+}
+
+.highlight-text {
+    font-size: 24px;
+    font-family: 'Bahnschrift SemiBold', sans-serif;
+}
+
+
+/* nav bar e derivados */
+.box-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background: rgba(255, 255, 255, 0);
+  z-index: 9;
+}
+
+.button-nav-left, .button-nav-right  {
+    width: 150px;
+    height: 100px;
+    font-family: 'Bahnschrift SemiBold', sans-serif;
+    font-size: 20px;
+    background-color: var(--branco);
+    color: var(--preto);
+    border: 5px solid var(--preto);
+    box-shadow: 7px 7px var(--preto);
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
+.button-nav-left:hover, .button-nav-right:hover {
+    box-shadow: 7px 7px var(--amarelo);
+    border: 5px solid var(--amarelo);
+    color: var(--preto);
+}
+
+/* card social e derivados*/
+
+.colunm-social {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 20%;
+  height: 100vh; 
+  background-color: var(--roxo);
+  border-left: var(--amarelo) 4px solid;
+  padding: 20px;
+  padding-top: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.box-social-medias {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 4;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.social-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.social-header {
+  display: flex;
+  align-items: center;
+}
+
+.social-header img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.social-name {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--branco);
+}
+
+.social-handle {
+  font-size: 20px;
+  color: var(--amarelo);
+  margin-top: 5px;
+}
+
+/* card info com e derivados */
+
+.Card-box-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 350px;
+    background-color: var(--roxo);
+    border: 5px solid var(--amarelo);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    z-index: 3;
+  }
+  
+  .box-field-leaft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .box-photo {
+    width: 120px;
+    height: 120px;
+    background-color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px var(--amarelo);
+  }
+  
+  .box-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .box-tags {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .box-tag {
+    background-color: var(--branco);
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 3px 3px 6px var(--amarelo);
+  }
+  
+  .box-field-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .box-perfil-description {
+    background-color: var(--branco);
+    padding: 10px;
+    max-width: 200px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 4px 4px 8px var(--amarelo);
+  }
+  
+
+/* Card do projeto e derivados */
+
+.box-project-resume {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: var(--roxo);
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+
+.box-project-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-name-styled,
+.project-tag-styled {
+  position: absolute;
+  background-color: var(--branco);
+  padding: 8px 12px;
+  border: 2px solid var(--roxo);
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 3px 3px 6px var(--roxo);
+}
+
+.project-name-styled {
+  top: -10%;
+  left: -7%;
+  z-index: 3;
+}
+
+.project-tag-styled {
+  bottom: -10%;
+  right: -10%;
+  z-index: 3;
+}
+
+
+/* Vitrine e derivados */
+.box-vitrine {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+width: 90%;
+height: 90%;
+padding: 20px;
+justify-content: flex-start;
+margin-top: 140px;
+z-index: 1;
+}
+
+.box-project-title {
+display: inline-block;
+position: relative;
+}
+
+.project-image {
+display: block;
+width: auto; 
+height: auto; 
+max-width: 100%; 
+}
+
+.card-container {
+display: none; 
+}
+
+.box-project-title:hover .card-container {
+display: block; 
+}
+
+/* Galeria e derivados */
+
+.box-gallery {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 80vh;
+  background-color: var(--branco);
+  border: 4px solid var(--roxo);
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  z-index: 100;
+}
+
+.gallery-content {
+  flex-grow: 1;
+  overflow-y: auto; 
+  scroll-behavior: smooth;
+}
+
+.gallery-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100%;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 2px solid var(--roxo);
+}
+
+.project-name-styled-two {
+  position: absolute;
+  top: -5%;
+  left: -4%;
+  background-color: var(--branco);
+  padding: 8px 12px;
+  border: 2px solid var(--roxo);
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 3px 3px 6px var(--roxo);
+  z-index: 101;
+}
+
+.close-btn {
+  position: absolute;
+  top: -5%;
+  right: -2%;
+  background-color: var(--branco);
+  padding: 10px 14px;
+  border: 2px solid var(--roxo);
+  font-size: 22px;
+  font-weight: bold;
+  box-shadow: 3px 3px 6px var(--roxo);
+  z-index: 101;
+  cursor: pointer;
+}
